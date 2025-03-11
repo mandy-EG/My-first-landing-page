@@ -4,6 +4,7 @@ body{
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    
 }
 
 /* header */
@@ -82,18 +83,130 @@ a:hover{
 .boton{
     height: 30px;
     width: 100px;
-    border:  2px solid #0066ff;
     box-sizing: border-box;
+    border: 2px hidden ;
     background-color: #0066ff;
+    font-weight: 900;
     color: #eee;
     border-radius: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
-img{
+.boton:hover{
+    color: rgba(86, 0, 136, 0.658);
+}
+
+.medellin img{
     height: 250px;
     width: 400px;
     border-radius: 10px;
     border: 2px solid rgb(97, 117, 131);
+}
+
+/* cuerpo */
+
+.info-container{
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.title-body{
+    color: #1f2937;
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.points{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-shrink: 0;
+    gap: 50px;
+
+
+}
+
+.point{
+    display: flex;
+    flex-direction: column;
+    width: 204px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.foto img{
+    height: 180px;
+    width: 200px;
+    border-radius: 10px;
+    border: 2px hidden #1f2937;
+    box-shadow: 0px 0px 4px 1px;
+}
+
+.info-foto{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #1f2937;
+    font-weight: 500;
+}
+
+/* relleno */
+
+.relleno-container{
+    background-color: #1f2937;
+    
+}
+
+.parrafo-relleno{
+    font-size: 36px;
+    color: rgba(165, 206, 206, 0.788);
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 150px 150px 20px 150px;
+}
+
+.mensaje{
+    font-size: 23px;
+    color: #eee;
+    display: flex;
+    font-weight: 500;
+    justify-content: end;
+    align-items: center;
+    padding: 0px 150px 20px 150px;
+}
+
+/* mensaje de azul */
+
+.body{
+    background-color: #0066ff;
+    margin: 100px 200px 100px 200px;
+    border-radius: 10px;
+    border: 2px hidden;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje-container{
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+.title-mensaje{
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.mensaje-relleno{
+    font-size: 16px;
+    font-weight: 450;
 }
 
