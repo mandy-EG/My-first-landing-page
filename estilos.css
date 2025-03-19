@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* grid-container */
+
+.grip-container{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "encabezado"
+    "info-container"
+    "relleno-container"
+    "body"
+    "footer";
+
+}
+
+/* header */
+
+.header{
+    background-color: #06f;
+    color: white;
+    grid-area: header;
+
+}
+
+/* encabezado */
+
+.encabezado{
+    background-color: #1f2937;
+    color: #eee;
+    height: auto;
+    display: flex;
+    gap: 150px;
+    grid-area: encabezado;
+}
+
+/* cuerpo */
+
+.info-container{
+    padding-top: 80px;
+    padding-bottom: 50px;
+    grid-area: info-container;
+}
+
+.title-body{
+    color: #1f2937;
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.points{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-shrink: 0;
+    gap: 50px;
+}
+
+.point{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+
+.point:hover{
+    transform: scale(1.2,1.2);
+}
+
+.foto{
+    height: 150px;
+    width: 180px;
+    border-radius: 10px;
+    border: 2px hidden #1f2937;
+    box-shadow: 0px 0px 4px 1px;
+}
+
+.info-foto{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #1f2937;
+    font-weight: 500;
+}
+
+/* relleno */
+
+.relleno-container{
+    background-color: #656875;
+    grid-area: relleno-container;
+    
+}
+
+.parrafo-relleno{
+    font-size: 36px;
+    color: rgba(165, 206, 206, 0.788);
+    text-align: center;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 50px 20px 30px;
+}
+
+.mensaje{
+    font-size: 23px;
+    color: #eee;
+    display: flex;
+    font-weight: 500;
+    justify-content: end;
+    align-items: center;
+    padding: 20px;
+}
+
+ /* mensaje azul */
+
+.body{
+    background-color: #0066ff;
+    margin: 100px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px hidden;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.zona1{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+}
+.title-mensaje{
+    font-size: 26px;
+    padding: 5px;
+    font-weight: 500;
+}
+
+.mensaje-relleno{
+    font-size: 16px;
+    padding: 5px;
+    font-weight: 450;
+}
+
+.boton-relleno{
+    background-color: #0066ff;
+    color: #eee;
+    font-weight: 650;
+    border-radius: 10px;
+    border: 2px solid #eee;
+    padding: 5px 20px;
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+
+.boton-relleno:hover{
+    color: rgb(0, 0, 0);
+    transform: scale(1.1,1.1);
+    
+}
+
+.footer{
+    background-color: #1f2937;
+    box-sizing: border-box;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    grid-area: footer;
+
+}
