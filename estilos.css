@@ -140,8 +140,7 @@ a:hover{
 /* cuerpo */
 
 .info-container{
-    padding-top: 80px;
-    padding-bottom: 50px;
+    padding: 80px 20px 50px 20px;
     grid-area: info-container;
 }
 
